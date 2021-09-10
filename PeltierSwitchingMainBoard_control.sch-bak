@@ -544,7 +544,7 @@ U 1 1 613D9F9C
 P 6700 2500
 F 0 "J4" H 6780 2492 50  0000 L CNN
 F 1 "Conn_01x14" H 6780 2401 50  0000 L CNN
-F 2 "PeltierSwitchingMainBoard_control:Mezzanine_board_14contacts" H 6700 2500 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x14_P2.54mm_Vertical" H 6700 2500 50  0001 C CNN
 F 3 "~" H 6700 2500 50  0001 C CNN
 	1    6700 2500
 	1    0    0    -1  
