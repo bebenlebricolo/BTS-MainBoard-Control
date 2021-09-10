@@ -206,7 +206,7 @@
     )
   )
 
-  (module PeltierSwitchingMainBoard_control:Molex_MicroLock_1.25_01x06 (layer F.Cu) (tedit 613A0AA5) (tstamp 613AC63A)
+  (module BTS-MainBoard-Control:Molex_MicroLock_1.25_01x06 (layer F.Cu) (tedit 613A0AA5) (tstamp 613AC63A)
     (at 78.105 41.91 180)
     (path /61533EB5)
     (fp_text reference J3 (at -6.096 0.254 180) (layer F.SilkS)

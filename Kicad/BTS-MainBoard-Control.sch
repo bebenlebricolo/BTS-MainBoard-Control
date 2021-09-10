@@ -485,7 +485,7 @@ U 1 1 61533EB5
 P 2450 6400
 F 0 "J3" H 2530 6392 50  0000 L CNN
 F 1 "Molex Micro Lock (1.25mm 1.5A)" H 2530 6301 50  0000 L CNN
-F 2 "PeltierSwitchingMainBoard_control:Molex_MicroLock_1.25_01x06" H 2450 6400 50  0001 C CNN
+F 2 "BTS-MainBoard-Control:Molex_MicroLock_1.25_01x06" H 2450 6400 50  0001 C CNN
 F 3 "~" H 2450 6400 50  0001 C CNN
 	1    2450 6400
 	1    0    0    -1  
@@ -623,4 +623,14 @@ Wire Wire Line
 	2600 1700 2800 1700
 Text Label 6500 2900 2    50   ~ 0
 Vcc
+Text Notes 7350 7500 0    79   Italic 0
+Beer thermoregulation system (main board, control section)
+Text Notes 10575 7625 0    50   Italic 0
+1.0
+Text Notes 8175 7625 0    50   Italic 0
+10/09/2021 (dd/mm/yyyy)
+Text Notes 7000 7075 0    50   ~ 0
+This board is a mezzanine board for the beer thermoregulation system\n main board. It was designed to workaround the single-sided Aluminum limitations\nof the power board and use a regular double sided FR4 board.\nThis board handles signal processing and mosfet driving using the hip4080a IC.\nInput signal comes from another logic board from which a PWM signal \nis generated (either by a µC or a NE555 timer).
+Text Notes 9775 6450 0    50   Italic 0
+Designed by Benoit Tarrade\n(alias bebenlebricolo)\nhttps://github.com/bebenlebricolo
 $EndSCHEMATC
