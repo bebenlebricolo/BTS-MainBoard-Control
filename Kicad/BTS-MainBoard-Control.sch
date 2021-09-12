@@ -490,17 +490,6 @@ F 3 "~" H 2450 6400 50  0001 C CNN
 	1    2450 6400
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0103
-U 1 1 6141E90C
-P 2250 6400
-F 0 "#PWR0103" H 2250 6150 50  0001 C CNN
-F 1 "GND" H 2255 6227 50  0000 C CNN
-F 2 "" H 2250 6400 50  0001 C CNN
-F 3 "" H 2250 6400 50  0001 C CNN
-	1    2250 6400
-	0    1    1    0   
-$EndComp
 Text Label 6500 2500 2    50   ~ 0
 BHO
 Text Label 6500 2600 2    50   ~ 0
@@ -521,8 +510,6 @@ Text Label 6500 2200 2    50   ~ 0
 ALO
 Text Label 6500 2300 2    50   ~ 0
 ALS
-Text Label 6500 3100 2    50   ~ 0
-Vcc
 $Comp
 L power:GND #PWR013
 U 1 1 613C9E97
@@ -633,4 +620,59 @@ Text Notes 7000 7075 0    50   ~ 0
 This board is a mezzanine board for the beer thermoregulation system\n main board. It was designed to workaround the single-sided Aluminum limitations\nof the power board and use a regular double sided FR4 board.\nThis board handles signal processing and mosfet driving using the hip4080a IC.\nInput signal comes from another logic board from which a PWM signal \nis generated (either by a µC or a NE555 timer).
 Text Notes 9775 6450 0    50   Italic 0
 Designed by Benoit Tarrade\n(alias bebenlebricolo)\nhttps://github.com/bebenlebricolo
+Text Label 2250 6400 2    50   ~ 0
+Fan_trigger
+$Comp
+L power:GND #PWR?
+U 1 1 613DFDA4
+P 6325 5050
+F 0 "#PWR?" H 6325 4800 50  0001 C CNN
+F 1 "GND" H 6330 4877 50  0000 C CNN
+F 2 "" H 6325 5050 50  0001 C CNN
+F 3 "" H 6325 5050 50  0001 C CNN
+	1    6325 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6325 5050 6625 5050
+Wire Wire Line
+	6625 5050 6625 4950
+Wire Wire Line
+	6325 4750 6075 4750
+$Comp
+L Device:R R?
+U 1 1 613E252B
+P 6325 4900
+F 0 "R?" H 6395 4946 50  0000 L CNN
+F 1 "56k" H 6395 4855 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 6255 4900 50  0001 C CNN
+F 3 "~" H 6325 4900 50  0001 C CNN
+	1    6325 4900
+	1    0    0    -1  
+$EndComp
+Connection ~ 6325 5050
+Wire Wire Line
+	6625 4550 6625 4475
+Wire Wire Line
+	6625 4475 6825 4475
+Text Label 6075 4750 2    50   ~ 0
+Fan_trigger
+Text Notes 7200 4450 0    50   ~ 0
+Peltier modules cooling fan driver
+$Comp
+L Transistor_FET:DMG3402L Q?
+U 1 1 613EE4C5
+P 6525 4750
+F 0 "Q?" H 6729 4796 50  0000 L CNN
+F 1 "DMG3402L" H 6729 4705 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6725 4675 50  0001 L CIN
+F 3 "http://www.diodes.com/assets/Datasheets/DMG3402L.pdf" H 6525 4750 50  0001 L CNN
+	1    6525 4750
+	1    0    0    -1  
+$EndComp
+Connection ~ 6325 4750
+Text Label 6825 4475 0    50   ~ 0
+FanDrive
+Text Label 6500 3100 2    50   ~ 0
+FanDrive
 $EndSCHEMATC
