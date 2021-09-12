@@ -510,8 +510,6 @@ Text Label 6500 2200 2    50   ~ 0
 ALO
 Text Label 6500 2300 2    50   ~ 0
 ALS
-Text Label 6500 3100 2    50   ~ 0
-Vcc
 $Comp
 L power:GND #PWR013
 U 1 1 613C9E97
@@ -653,30 +651,13 @@ F 3 "~" H 6325 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6325 5050
-Text Label 6625 4275 2    50   ~ 0
-Vcc
 Wire Wire Line
 	6625 4550 6625 4475
 Wire Wire Line
 	6625 4475 6825 4475
-Wire Wire Line
-	6625 4275 6625 4375
-Wire Wire Line
-	6625 4375 6825 4375
-$Comp
-L Connector_Generic:Conn_01x02 J?
-U 1 1 613EA8A7
-P 7025 4375
-F 0 "J?" H 7105 4367 50  0000 L CNN
-F 1 "Conn_01x02" H 7105 4276 50  0000 L CNN
-F 2 "" H 7025 4375 50  0001 C CNN
-F 3 "~" H 7025 4375 50  0001 C CNN
-	1    7025 4375
-	1    0    0    -1  
-$EndComp
 Text Label 6075 4750 2    50   ~ 0
 Fan_trigger
-Text Notes 6750 4150 0    50   ~ 0
+Text Notes 7200 4450 0    50   ~ 0
 Peltier modules cooling fan driver
 $Comp
 L Transistor_FET:DMG3402L Q?
@@ -690,4 +671,8 @@ F 3 "http://www.diodes.com/assets/Datasheets/DMG3402L.pdf" H 6525 4750 50  0001 
 	1    0    0    -1  
 $EndComp
 Connection ~ 6325 4750
+Text Label 6825 4475 0    50   ~ 0
+FanDrive
+Text Label 6500 3100 2    50   ~ 0
+FanDrive
 $EndSCHEMATC

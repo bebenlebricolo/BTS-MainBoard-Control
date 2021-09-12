@@ -623,10 +623,10 @@ Designed by Benoit Tarrade\n(alias bebenlebricolo)\nhttps://github.com/bebenlebr
 Text Label 2250 6400 2    50   ~ 0
 Fan_trigger
 $Comp
-L power:GND #PWR?
+L power:GND #PWR01
 U 1 1 613DFDA4
 P 6325 5050
-F 0 "#PWR?" H 6325 4800 50  0001 C CNN
+F 0 "#PWR01" H 6325 4800 50  0001 C CNN
 F 1 "GND" H 6330 4877 50  0000 C CNN
 F 2 "" H 6325 5050 50  0001 C CNN
 F 3 "" H 6325 5050 50  0001 C CNN
@@ -640,10 +640,10 @@ Wire Wire Line
 Wire Wire Line
 	6325 4750 6075 4750
 $Comp
-L Device:R R?
+L Device:R R8
 U 1 1 613E252B
 P 6325 4900
-F 0 "R?" H 6395 4946 50  0000 L CNN
+F 0 "R8" H 6395 4946 50  0000 L CNN
 F 1 "56k" H 6395 4855 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 6255 4900 50  0001 C CNN
 F 3 "~" H 6325 4900 50  0001 C CNN
@@ -660,10 +660,10 @@ Fan_trigger
 Text Notes 7200 4450 0    50   ~ 0
 Peltier modules cooling fan driver
 $Comp
-L Transistor_FET:DMG3402L Q?
+L Transistor_FET:DMG3402L Q1
 U 1 1 613EE4C5
 P 6525 4750
-F 0 "Q?" H 6729 4796 50  0000 L CNN
+F 0 "Q1" H 6729 4796 50  0000 L CNN
 F 1 "DMG3402L" H 6729 4705 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 6725 4675 50  0001 L CIN
 F 3 "http://www.diodes.com/assets/Datasheets/DMG3402L.pdf" H 6525 4750 50  0001 L CNN
