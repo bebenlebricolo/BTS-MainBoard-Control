@@ -86,7 +86,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "Gerbers/ControlBoardV1"))
+      (outputdirectory "../Gerbers/BTS-MainBoard-Control-V1"))
   )
 
   (net 0 "")
@@ -464,9 +464,9 @@
     (fp_line (start -2.45 1.12) (end 2.45 1.12) (layer B.CrtYd) (width 0.05))
     (fp_line (start 2.45 1.12) (end 2.45 -1.12) (layer B.CrtYd) (width 0.05))
     (fp_line (start 2.45 -1.12) (end -2.45 -1.12) (layer B.CrtYd) (width 0.05))
-    (pad 2 smd roundrect (at 1.55 0 270) (size 1.3 1.75) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.192308)
+    (pad 2 smd roundrect (at 1.55 0 270) (size 1.3 1.75) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.1923076923076923)
       (net 1 GND))
-    (pad 1 smd roundrect (at -1.55 0 270) (size 1.3 1.75) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.192308)
+    (pad 1 smd roundrect (at -1.55 0 270) (size 1.3 1.75) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.1923076923076923)
       (net 22 /Fan_trigger))
     (model ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_1206_3216Metric.wrl
       (at (xyz 0 0 0))
@@ -1804,7 +1804,7 @@
   (segment (start 79.827901 69.57478) (end 78.74999 70.652691) (width 0.25) (layer F.Cu) (net 23))
   (segment (start 78.74999 70.652691) (end 78.74999 74.28501) (width 0.25) (layer F.Cu) (net 23))
 
-  (zone (net 2) (net_name +12V) (layer F.Cu) (tstamp 613AB659) (hatch edge 0.508)
+  (zone (net 2) (net_name +12V) (layer F.Cu) (tstamp 613E4E42) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508) (smoothing chamfer))
@@ -2132,7 +2132,7 @@
       )
     )
   )
-  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 613AB656) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 613E4E3F) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508) (smoothing chamfer))
